@@ -211,4 +211,68 @@ body {
   }
 }
 
+/* 🔥 Responsive Hamburger Menu */
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
 
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #051129;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid #0ef;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .nav-link {
+    font-size: 20px;
+    opacity: 0;
+    animation: none;
+  }
+
+  .navbar.active .nav-link {
+    animation: fadeSlideIn 0.6s ease forwards;
+  }
+
+  .navbar.active .nav-link:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  .navbar.active .nav-link:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .navbar.active .nav-link:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  .navbar.active .nav-link:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  .navbar.active .nav-link:nth-child(5) {
+    animation-delay: 1s;
+  }
+  .navbar.active .nav-link:nth-child(6) {
+    animation-delay: 1.2s;
+  }
+}
+
+/* Keyframes for hamburger animation */
+@keyframes fadeSlideIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
