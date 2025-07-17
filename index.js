@@ -7,7 +7,7 @@ var typed = new Typed(".text", {
   loop: true,
 });
 
-// Hamburger Menu
+// Hamburger Menu Toggle
 const menuIcon = document.getElementById("menu-icon");
 const navMenu = document.getElementById("nav-menu");
 
