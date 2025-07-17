@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills</title>
+  <link rel="stylesheet" href="skills.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar" id="nav-menu">
+      <a href="index.html" style="--i:1">Home</a>
+      <a href="aboutme.html" style="--i:2">About</a>
+      <a href="skills.html" style="--i:3" class="active">Skills</a>
+      <a href="projects.html" style="--i:4">Projects</a>
+      <a href="resume.html" style="--i:5">Resume</a>
+      <a href="contact.html" style="--i:6">Contact</a>
+    </nav>
+  </header>
+
+  <section class="skills-section">
+    <h2 class="skills-title">My <span>Skills</span></h2>
+<p class="skills-desc">Here are some of the technical skills I've mastered and work with regularly:</p>
+
+    <div class="skills-container">
+      <div class="skill-card"></i><span>C</span></div>
+      <div class="skill-card"><span>Java</span></div>
+      <div class="skill-card"><span>Python</span></div>
+      <div class="skill-card"><span>Data Structures & Algorithms</span></div>
+      <div class="skill-card"><span>Object-Oriented Programming</span></div>
+      <div class="skill-card"><span>HTML</span></div>
+      <div class="skill-card"><span>CSS</span></div>
+      <div class="skill-card"><span>JavaScript</span></div>
+      <div class="skill-card"><span>Github</span></div>    
+      <div class="skill-card"><span> DBMS with MySQL</span></div>
+      <div class="skill-card"><span>Operating System</span></div>
+
+ 
+
+    </div>
+  </section>
+
+  <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navMenu = document.getElementById('nav-menu');
+    menuIcon.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

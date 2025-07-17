@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: #ededed;
+  background: #081b29;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #051129;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  animation: slideRight 1s ease forwards;
+  opacity: 0;
+}
+
+#menu-icon {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  z-index: 101;
+}
+
+.navbar {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0;
+  animation: slideTop 0.5s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #0ef;
+}
+
+.skills-section {
+  margin-top: 130px;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.skills-title span {
+  color: #0ef;
+}
+
+.skills-desc {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+
+.skill-card {
+  background: #0a1e35;
+  border: 2px solid #0ef;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #0ef;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.skill-card i {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.skill-card:hover {
+  background: #0ef;
+  color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #0ef;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #051129;
+    display: none;
+    padding: 10px 0;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+    display: block;
+    text-align: center;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .skills-title {
+    font-size: 36px;
+  }
+
+  .skills-desc {
+    font-size: 16px;
+  }
+
+  .skill-card {
+    font-size: 16px;
+  }
+
+  .skill-card i {
+    font-size: 28px;
+  }
+}

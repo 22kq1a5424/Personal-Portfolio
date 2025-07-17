@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar" id="nav-menu">
+      <a href="index.html" style="--i:1">Home</a>
+      <a href="aboutme.html" style="--i:2">About</a>
+      <a href="skills.html" style="--i:3">Skills</a>
+      <a href="projects.html" style="--i:4">Projects</a>
+      <a href="resume.html" style="--i:5">Resume</a>
+      <a href="contact.html" style="--i:6" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact" id="contact">
+    <div class="contact-box">
+      <h2>Let's <span>Connect</span></h2>
+      <p>I’d happy to hear from you. Whether you want to discuss a project, ask a question, or just say hello — feel free to reach out through any platform below!</p>
+      
+      <ul class="contact-details">
+        <li><i class='bx bxs-envelope'></i> jayalakshmipathi215@gmail.com</li>
+        <li><i class='bx bxs-phone'></i> +91 9030950617</li>
+        <li><i class='bx bxs-map'></i> India</li>
+      </ul>
+
+      <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/jayalakshmi-pathi-317005301/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/22kq1a5424" target="_blank"><i class="bx bxl-github"></i></a>
+        <a href="mailto:jayalakshmipathi215@gmail.com"><i class="bx bxl-gmail"></i></a>
+        <a href="https://www.youtube.com/@JayalakshmiPathi" target="_blank"><i class="bx bxl-youtube"></i></a>
+      </div>
+    </div>
+  </section>
+
+ <div class="last-text">
+  <p><span class="copyright">&copy;</span> 2025 Developed by Jayalakshmi Pathi</p>
+</div>
+
+
+  <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navMenu = document.getElementById('nav-menu');
+    menuIcon.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
